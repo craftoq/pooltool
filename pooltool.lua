@@ -14,7 +14,6 @@ end
 
 pooltool.cleartable = cleartab
 
---push方法不负责清理留存的数据，所以调用之前应当自行清理，避免再次使用该对象时出现bug
 function pooltool:push(item)
 	assert(item ~= nil)
 
